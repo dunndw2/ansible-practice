@@ -8,5 +8,4 @@
     - name: User gets created
       user:
         name: test
-        state: present
-
+        state: absent
