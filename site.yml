@@ -1,0 +1,10 @@
+---
+- name: test playbook for ad hoc command example
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: user exists with uid 4000
+      user:
+        name: newbie
+        uid: 4000
+        state: present
