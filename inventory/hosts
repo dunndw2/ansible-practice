@@ -1,0 +1,3 @@
+web_servers:
+  hosts:
+    ubuntu@10.12.0.249:
