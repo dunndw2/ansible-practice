@@ -1,0 +1,6 @@
+# variables for the db_servers group
+
+db_users:
+  - test
+  - dev
+  - qa

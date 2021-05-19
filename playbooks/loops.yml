@@ -1,0 +1,30 @@
+---
+- name: New users are created
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Create users
+      user:
+        name: "{{ item }}"
+        state: present
+      loop: "{{ db_users }}"
+
+# this would be better than having 3
+# separate user create tasks like this
+#
+# tasks:
+#   - name: Create users
+#     user:
+#       name: abc
+#       state: present
+#
+#   - name: Create users
+#     user:
+#       name: def
+#       state: present
+#
+#   - name: Create users
+#     user:
+#       name: ghi
+#       state: present  
