@@ -4,4 +4,4 @@
   become: true
 
   roles:
-    - example_role
+    - user

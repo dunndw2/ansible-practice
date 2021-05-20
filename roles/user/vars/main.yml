@@ -1,4 +1,5 @@
-# variables for the web_servers group
+---
+# vars file for user
 
 username:
   test:
@@ -15,7 +16,7 @@ username:
     password: "{{ secret }}"
 
 
-  web_users:
-    - member
-    - admin
-    - developer
+web_users:
+  - member
+  - admin
+  - developer
